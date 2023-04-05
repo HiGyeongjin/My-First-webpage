@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JACR Boxing</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        border: 3px solid #b2000f;
+        font-size: 28px;
+        padding: 18px;
+        border-radius: 4px;
+        font-family: monospace;
+        font
+      }
+      img {
+        margin: 0 auto;
+        display: block;
+      }
+      img:hover {
+        opacity: 0.9;
+      }
+      .jacr {
+        max-width: 500px;
+        display: block;
+        margin: 0 auto;
+        background: linear-gradient(rgb(248, 242, 234), #fff);
+      }
+      p {
+        text-align: center;
+        font-family: monospace;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        color: #fff;
+        background: #b2000f;
+        padding: 20px;
+        font-size: 20px;
+        border-radius: 35px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        font-family: monospace;
+        transition: all 100ms ease-in-out;
+        border: 1px solid #b2000f;
+      }
+      button:hover {
+        cursor: pointer;
+        background: #fff;
+        color: #b2000f;
+      }
+      .qbWeb {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="jacr">
+      <h1>The best trainer in town?</h1>
+      <h2>Jose Adrian Cardenas Ramirez</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/723/original/Screenshot_%287%29.png?1643225836"
+        width="400"
+      />
+      <hr />
+      <p>
+        <strong>ASSISTANT HEAD COACH</strong>
+        <br />
+        <br />
+        <span>
+          As a lifelong athlete with years of competing in team sports and
+          practicing other martial arts, I eventually found my calling in boxing
+          over 6 years ago. My knowledge from training in other sports,
+          competing in the ring and passion for functional fitness all
+          contribute to a well balanced coaching style.</span
+        >
+        <br />
+        <br />
+        2016 GOLDEN GLOVES<br />
+        SILVER 2016 MEXICAN STATE<br />
+        CHAMPIONSHIPS SILVER<br />
+        COMPETITIVE BOXER
+      </p>
+      <button class="try-Session">Try a free session</button> <br />
+      <a
+        href="https://www.quinitboxing.com/privates/coaches"
+        target="_blank"
+        class="qbWeb"
+        >More info on <em> Quinitboxing</em></a
+      ><br />
+      <br />
+      This page was built by Gyeongjin Lee
+    </div>
+    <script>
+      function session() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        alert(
+          "Thank you " +
+            name +
+            ", we will be in touch. Meanwhile, don't forget to work out!🥊"
+        );
+      }
+      let trySession = document.querySelector(".try-Session");
+      trySession.addEventListener("click", session);
+    </script>
+  </body>
+</html>
